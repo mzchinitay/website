@@ -1,229 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Desarrollador Front End</title>
 
     <!-- Link Estilos -->
-    <link rel="stylesheet" href="../Mi portafolio/estilos/index.css">
+    <link rel="stylesheet" href="estilos/index.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="imagenes/iconos/favicon.ico"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&display=swap"
+    />
 
-    <link rel="icon" href="imagenes/iconos/android-icon-144x144.png">
-</head>
+    <link rel="icon" href="imagenes/iconos/android-icon-144x144.png" />
+  </head>
 
-<body>
+  <body>
+    <!-- Nav -->
+    <header class="menu-nav">
+      <button class="boton-hamburguesa"><i class="fas fa-bars"></i></button>
 
-<!-- Nav -->
-<header class="menu-nav">
-
-    <button class="boton-hamburguesa"><i class="fas fa-bars"></i></button>
-
-        <nav class="nav-escritorio">
-
+      <nav class="nav-escritorio">
         <ul class="nav-header">
-            <li><a href="#" id="buton-nav" class="nav-up">HOLA</a></li>
-            <li><a href="#conocimientos" id="buton-nav" class="nav-up">CONOCIMIENTOS</a></li>
-            <li><a href="#proyecto" id="buton-nav" class="nav-up">PROYECTOS</a></li>
-            <li class="contactoboton">
-                <div>
-                    <a class="nav-up" id="buton-nav" href="..//Mi portafolio/contacto.html"> CONTACTO </a>
-                </div> </li>
+          <li><a href="#" class="nav-up buton-nav">HOLA</a></li>
+          <li>
+            <a href="#conocimientos" class="nav-up buton-nav">CONOCIMIENTOS</a>
+          </li>
+          <li><a href="#proyecto" class="nav-up buton-nav">PROYECTOS</a></li>
+          <li class="contactoboton">
+            <div>
+              <a class="nav-up buton-nav" href="contacto.html"> CONTACTO </a>
+            </div>
+          </li>
         </ul>
-        </nav>
+      </nav>
 
-    <!--Menu Hamburguesa-->
+      <!--Menu Hamburguesa-->
 
-    <aside class="menu-extendido">
-      <div class="container-expand" id="container-expand">
+      <aside class="menu-extendido">
+        <div class="container-expand" id="container-expand">
+          <button class="cerrar-expand">
+            <i class="fas fa-times-circle"></i>
+          </button>
 
-        <button class="cerrar-expand"><i class="fas fa-times-circle"></i></button>
+          <nav class="nav-menu-expand">
+            <ul class="nav-lista-expand">
+              <li class="lista-expand">
+                <a href="#div-introduccion" class="nav-expand">HOLA</a>
+              </li>
+              <li class="lista-expand">
+                <a href="#conocimientos" class="nav-expand">CONOCIMIENTOS</a>
+              </li>
+              <li class="lista-expand">
+                <a href="#proyecto" class="nav-expand">PROYECTOS</a>
+              </li>
+              <li class="lista-expand">
+                <a href="contacto.html" class="nav-expand">CONTACTO</a>
+              </li>
+              <li class="lista-expand"><i class="fas fa-heart"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </header>
 
-        <nav class="nav-menu-expand">
+    <!-- HOME-->
 
-          <ul class="nav-lista-expand">
+    <section class="presentacion">
+      <div class="introduccion" id="div-introduccion">
+        <h3>¡Hola! Mi nombre es</h3>
 
-            <li class="lista-expand"><a href="#div-introduccion" class="nav-expand">HOLA</a></li>
-            <li class="lista-expand"><a href="#conocimientos" class="nav-expand">CONOCIMIENTOS</a></li>
-            <li class="lista-expand"><a href="#proyecto" class="nav-expand">PROYECTOS</a></li>
-            <li class="lista-expand"><a href="contacto.html" class="nav-expand">CONTACTO</a>
-            <li class="lista-expand"><i class="fas fa-heart"></i></li>
-
-          </ul>
-        </nav>
-      </div>
-
-    </aside>
-
-  </header>
-
-  <!-- HOME-->
-
-  <section class="presentacion">
-        <div class="introduccion" id="div-introduccion">
-
-            <h3>¡Hola! Mi nombre es</h3>
-
-            <h1 class="titulo-nombre">Yosmary Alessandra</h1>
+        <h1 class="titulo-nombre">Yosmary Alessandra</h1>
 
         <div class="slider-wrapper">
-            <p> Soy</p>
+          <p>Soy</p>
 
-            <div class="slider">
+          <div class="slider">
             <div class="slider1">Desarrolladora Front End</div>
-
+          </div>
         </div>
+        <a href="#proyecto" class="proyecto link">Mis Proyectos</a>
+      </div>
 
-        </div>
-            <a href="#proyecto" class="proyecto link">Mis Proyectos</a>
-         </div>
+      <div>
+        <img
+          class="img-introduccion"
+          src="imagenes/srtadeveloper.png"
+          alt="Desarrolladora"
+        />
+      </div>
+    </section>
 
-    <div>
-         <img class="img-introduccion" src="imagenes/srtadeveloper.png" alt="Desarrolladora">
-    </div>
+    <!-- CONOCIMIENTOS -->
+    <section class="habilidades" id="conocimientos">
+      <div class="contenedor">
+        <h2>Mis Conocimientos</h2>
 
-  </section>
+        <div class="principal">
+          <div class="caja">
+            <i class="icono devicon-html5-plain"></i>
+            <p>HTML5</p>
+          </div>
 
+          <div class="caja">
+            <i class="icono devicon-git-plain"></i>
+            <p>GIT</p>
+          </div>
 
-  <!-- CONOCIMIENTOS -->
-  <section class="habilidades" id="conocimientos">
-    <div class="contenedor">
-      <h2>Mis Conocimientos</h2>
+          <div class="caja">
+            <i class="icono devicon-react-original"></i>
+            <p>REACT</p>
+          </div>
 
-      <div class="principal">
+          <div class="caja">
+            <i class="icono devicon-javascript-plain"></i>
+            <p>Javascript</p>
+          </div>
 
-        <div class="caja">
-          <i class="icono devicon-html5-plain"></i>
-          <p>HTML5</p>
-        </div>
-
-        <div class="caja">
-          <i class="icono devicon-git-plain"></i>
-          <p>GIT</p>
-        </div>
-
-        <div class="caja">
-          <i class="icono devicon-react-original"></i>
-          <p>REACT</p>
-        </div>
-
-        <div class="caja">
-          <i class="icono devicon-javascript-plain"></i>
-          <p>Javascript</p>
-        </div>
-
-        <div class="caja">
-          <i class="icono devicon-css3-plain"></i>
-          <p>CSS</p>
-
+          <div class="caja">
+            <i class="icono devicon-css3-plain"></i>
+            <p>CSS</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- QUOTE-->
+    <!-- QUOTE-->
 
-  <section class="quote">
-         <div class="contenedor-quote">
-                <p class="EvaEkvall"> " Uno tiene que ser más positivo, y no tener miedo a ser cursi y a ser feliz "</p>
-                <p class="sign">Eva Ekvall</p>
+    <section class="quote">
+      <div class="contenedor-quote">
+        <p class="EvaEkvall">
+          " Uno tiene que ser más positivo, y no tener miedo a ser cursi y a ser
+          feliz "
+        </p>
+        <p class="sign">Eva Ekvall</p>
+      </div>
+    </section>
 
-         </div>
+    <!-- MIS PROYECTOS-->
 
-  </section>
+    <section class="proyectos">
+      <div class="contenedor-proyectos">
+        <h2 id="proyecto">Mis Proyectos</h2>
+        <div class="project-filters">
+          <button
+            id="todos"
+            type="button"
+            data-tecnologia="todos"
+            class="project-filter"
+          >
+            Todos
+          </button>
 
-  <!-- MIS PROYECTOS-->
+          <button
+            id="html"
+            type="button"
+            data-tecnologia="html"
+            class="project-filter"
+          >
+            HTML
+          </button>
 
-  <section class="proyectos">
-    <div class="contenedor-proyectos">
-      <h2 id="proyecto">Mis Proyectos</h2>
-      <div class="project-filters">
+          <button
+            id="css"
+            type="button"
+            data-tecnologia="css"
+            class="project-filter"
+          >
+            CSS
+          </button>
 
-        <button id="todos" type="button" data-tecnologia="todos" class="project-filter">Todos</button>
+          <button
+            id="js"
+            type="button"
+            data-tecnologia="javascript"
+            class="project-filter"
+          >
+            JavaScript
+          </button>
 
-        <button id="html" type="button" data-tecnologia="html" class="project-filter">HTML</button>
-
-        <button id="css" type="button" data-tecnologia="css" class="project-filter">CSS</button>
-
-        <button id="js" type="button" data-tecnologia="javascript" class="project-filter">JavaScript</button>
-
-        <button id="react" type="button" data-tecnologia="react" class="project-filter">React</button>
-
+          <button
+            id="react"
+            type="button"
+            data-tecnologia="react"
+            class="project-filter"
+          >
+            React
+          </button>
+        </div>
       </div>
 
       <div class="principal-proyectos">
-
         <div class="caja-pro" id="portfolio" data-tecnologia="html-css">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/miportafolio.png" alt="Portfolio">
+          <img
+            class="proyecto-img"
+            src="imagenes/miportafolio.png"
+            alt="Portfolio"
+          />
           <a href="#div-introduccion" class="link-proyectos">Portfolio</a>
-
         </div>
 
         <div class="caja-pro" id="tienda" data-tecnologia="javascript">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/TiendaADB.png" alt="Tienda">
+          <img class="proyecto-img" src="imagenes/TiendaADB.png" alt="Tienda" />
           <p>Tienda</p>
         </div>
 
-        <div class="caja-pro" id="juego-tres-enlinea" data-tecnologia="javascript">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/videogame.png" alt="Juego 3 en Linea">
+        <div
+          class="caja-pro"
+          id="juego-tres-enlinea"
+          data-tecnologia="javascript"
+        >
+          <img
+            class="proyecto-img"
+            src="imagenes/videogame.png"
+            alt="Juego 3 en Linea"
+          />
           <p>Juegos</p>
         </div>
 
-        <div class="caja-pro" id="controlador-gastos" data-tecnologia="javascript">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/Control de gastos.png" alt="Controlador de Gastos">
+        <div
+          class="caja-pro"
+          id="controlador-gastos"
+          data-tecnologia="javascript"
+        >
+          <img
+            class="proyecto-img"
+            src="imagenes/control-de-gastos.png"
+            alt="Controlador de Gastos"
+          />
           <p>Controlador de Gastos</p>
         </div>
 
-        <div class="caja-pro" id="administrador-reuniones" data-tecnologia="javascript">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/reuniones.png" alt="Administrador de Reuniones">
+        <div
+          class="caja-pro"
+          id="administrador-reuniones"
+          data-tecnologia="javascript"
+        >
+          <img
+            class="proyecto-img"
+            src="imagenes/reuniones.png"
+            alt="Administrador de Reuniones"
+          />
           <p>Administrador de Reuniones</p>
         </div>
         <div class="caja-pro" id="todo-app" data-tecnologia="react">
-          <img class="proyecto-img" src="../Mi portafolio/imagenes/aplicacion.png" alt="Todo App">
+          <img
+            class="proyecto-img"
+            src="imagenes/aplicacion.png"
+            alt="Todo App"
+          />
           <p>Todo App</p>
         </div>
       </div>
+    </section>
 
+    <!-- FOOTER-->
+    <footer>
+      <nav class="menu-footer">
+        <ul class="ul-foot">
+          <li><a href="#" class="link-footer">HOLA</a></li>
+          <li>
+            <a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a>
+          </li>
+          <li><a href="#proyecto" class="link-footer">PROYECTOS</a></li>
+          <li><a href="contacto.html" class="link-footer">CONTACTO</a></li>
+        </ul>
+      </nav>
 
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/yosmarysalcedo/"
+          class="link-footer"
+        >
+          <i class="fab devicon-linkedin-plain dos"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5491162927442"
+          class="link-footer"
+          ><i class="fab fa-whatsapp dos"></i
+        ></a>
+        <a href="https://github.com/mzchinitay" class="link-footer"
+          ><i class="fab devicon-github-plain dos"></i
+        ></a>
+      </div>
 
-  </section>
+      <div class="madeby">
+        <p>Hecho por Yosmary Salcedo</p>
+      </div>
+    </footer>
 
-  <!-- FOOTER-->
-  <footer>
-
-    <nav class="menu-footer">
-      <ul class="ul-foot">
-        <li><a href="#" class="link-footer">HOLA</a></li>
-        <li><a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a></li>
-        <li><a href="#proyecto" class="link-footer">PROYECTOS</a></li>
-        <li><a href="contacto.html" class="link-footer">CONTACTO</a></li>
-      </ul>
-    </nav>
-  
-    <div class="redes">
-      <a href="https://www.linkedin.com/in/yosmarysalcedo/" class="link-footer dos">
-        <i class="fab devicon-linkedin-plain"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=5491162927442" class="link-footer dos"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/mzchinitay" class="link-footer dos"><i class="fab devicon-github-plain"></i></a>
-    </div>
-
-    <div class="madeby">
-      <p>Hecho por Yosmary Salcedo</p>
-    </div>
-
-    </ul>
-    </nav>
-  </footer>
-
-
-  <script src="main.js"> </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
