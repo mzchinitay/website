@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>Desarrolladora Front End</title>
 
     <!-- Link Estilos -->
+    
     <link rel="stylesheet" href="estilos/index.css"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"/>
@@ -18,25 +19,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&display=swap"/>
 
     <link rel="icon" href="imagenes/iconos/android-icon-144x144.png"/>
+    
 </head>
 
 <body>
-
-<!-- Nav -->
-<header class="menu-nav">
-
+  <!-- Nav -->  
+  <header class="menu-nav">
     <button class="boton-hamburguesa"><i class="fas fa-bars"></i></button>
-
-        <nav class="nav-escritorio">
-
+      
+     <nav class="nav-escritorio">
         <ul class="nav-header">
-            <li><a href="#" id="buton-nav" class="nav-up">HOLA</a></li>
-            <li><a href="#conocimientos" id="buton-nav" class="nav-up">CONOCIMIENTOS</a></li>
-            <li><a href="#proyecto" id="buton-nav" class="nav-up">PROYECTOS</a></li>
+            <li><a href="#" class="nav-up buton nav">HOLA</a></li>
+            
+            <li><a href="#conocimientos" class="nav-up buton-nav">CONOCIMIENTOS</a></li>
+            
+            <li><a href="#proyecto" class="nav-up buton-nav">PROYECTOS</a></li>
+            
             <li class="contactoboton">
                 <div>
-                    <a class="nav-up" id="buton-nav" href="..//Mi portafolio/contacto.html"> CONTACTO </a>
-                </div> </li>
+                    <a class="nav-up buton-nav" href="contacto.html"> CONTACTO </a>
+                </div> 
+            </li>
         </ul>
         </nav>
 
@@ -45,50 +48,51 @@
     <aside class="menu-extendido">
       <div class="container-expand" id="container-expand">
 
-        <button class="cerrar-expand"><i class="fas fa-times-circle"></i></button>
+        <button class="cerrar-expand">
+            <i class="fas fa-times-circle"></i>
+        </button>
 
         <nav class="nav-menu-expand">
-
           <ul class="nav-lista-expand">
-
-            <li class="lista-expand"><a href="#div-introduccion" class="nav-expand">HOLA</a></li>
-            <li class="lista-expand"><a href="#conocimientos" class="nav-expand">CONOCIMIENTOS</a></li>
-            <li class="lista-expand"><a href="#proyecto" class="nav-expand">PROYECTOS</a></li>
-            <li class="lista-expand"><a href="contacto.html" class="nav-expand">CONTACTO</a>
+            <li class="lista-expand">
+                <a href="#div-introduccion" class="nav-expand">HOLA</a>
+              </li>
+            <li class="lista-expand">
+                <a href="#conocimientos" class="nav-expand">CONOCIMIENTOS</a>
+              </li>
+            <li class="lista-expand">
+                <a href="#proyecto" class="nav-expand">PROYECTOS</a>
+              </li>
+            <li class="lista-expand">
+                <a href="contacto.html" class="nav-expand">CONTACTO</a>
             <li class="lista-expand"><i class="fas fa-heart"></i></li>
 
           </ul>
         </nav>
       </div>
-
     </aside>
-
   </header>
 
   <!-- HOME-->
-
-  <section class="presentacion">
+    <section class="presentacion">
         <div class="introduccion" id="div-introduccion">
-
-            <h3>¡Hola! Mi nombre es</h3>
-
-            <h1 class="titulo-nombre">Yosmary Alessandra</h1>
+          <h3>¡Hola! Mi nombre es</h3>
+          <h1 class="titulo-nombre">Yosmary Alessandra</h1>
 
         <div class="slider-wrapper">
-            <p> Soy</p>
+          <p>Soy</p>
 
-            <div class="slider">
+          <div class="slider">
             <div class="slider1">Desarrolladora Front End</div>
-
-        </div>
-
-        </div>
+          </div>
+         </div>
+            
             <a href="#proyecto" class="proyecto link">Mis Proyectos</a>
          </div>
 
-    <div>
-         <img class="img-introduccion" src="imagenes/srtadeveloper.png" alt="Desarrolladora">
-    </div>
+        <div>
+         <img class="img-introduccion" src="imagenes/srtadeveloper.png" alt="Desarrolladora"/>
+     </div>
 
   </section>
 
@@ -99,7 +103,6 @@
       <h2>Mis Conocimientos</h2>
 
       <div class="principal">
-
         <div class="caja">
           <i class="icono devicon-html5-plain"></i>
           <p>HTML5</p>
@@ -123,21 +126,18 @@
         <div class="caja">
           <i class="icono devicon-css3-plain"></i>
           <p>CSS</p>
-
         </div>
       </div>
-    </div>
+    </div>    
   </section>
 
   <!-- QUOTE-->
-
+  
   <section class="quote">
-         <div class="contenedor-quote">
-                <p class="EvaEkvall"> " Uno tiene que ser más positivo, y no tener miedo a ser cursi y a ser feliz "</p>
-                <p class="sign">Eva Ekvall</p>
-
-         </div>
-
+     <div class="contenedor-quote">
+       <p class="EvaEkvall"> " Uno tiene que ser más positivo, y no tener miedo a ser cursi y a ser feliz "</p>
+       <p class="sign">Eva Ekvall</p>
+     </div>
   </section>
 
   <!-- MIS PROYECTOS-->
@@ -191,28 +191,38 @@
           <p>Todo App</p>
         </div>
       </div>
-
-
-
   </section>
 
   <!-- FOOTER-->
+      
   <footer>
-
     <nav class="menu-footer">
       <ul class="ul-foot">
-        <li><a href="#" class="link-footer">HOLA</a></li>
-        <li><a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a></li>
-        <li><a href="#proyecto" class="link-footer">PROYECTOS</a></li>
-        <li><a href="contacto.html" class="link-footer">CONTACTO</a></li>
+        <li>
+            <a href="#" class="link-footer">HOLA</a>
+        </li>
+        <li>
+            <a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a>
+        </li>
+        <li>
+            <a href="#proyecto" class="link-footer">PROYECTOS</a>
+        </li>
+        <li>
+            <a href="contacto.html" class="link-footer">CONTACTO</a>
+        </li>
       </ul>
     </nav>
   
     <div class="redes">
-      <a href="https://www.linkedin.com/in/yosmarysalcedo/" class="link-footer dos">
-        <i class="fab devicon-linkedin-plain"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=5491162927442" class="link-footer dos"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/mzchinitay" class="link-footer dos"><i class="fab devicon-github-plain"></i></a>
+      <a href="https://www.linkedin.com/in/yosmarysalcedo/" class="link-footer">
+        <i class="fab devicon-linkedin-plain dos"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5491162927442" class="link-footer">
+        <i class="fab fa-whatsapp dos"></i>
+      </a>
+      <a href="https://github.com/mzchinitay" class="link-footer">
+        <i class="fab devicon-github-plain dos"></i>
+      </a>
     </div>
 
     <div class="madeby">
@@ -224,6 +234,6 @@
   </footer>
 
 
-  <script src="main.js"> </script>
+  <script src="main.js"></script>
 </body>
 </html>
