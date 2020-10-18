@@ -386,7 +386,7 @@ footer {
 }
 
 .redes {
-  color: white;
+  color: #7f055f;
   font-size: 45px;
   margin: 20px;
 }
@@ -419,7 +419,7 @@ footer {
   display: inline-block;
   font-size: 70px;
   font-weight: 800;
-  color: white;
+  color: #7f055f;
   overflow: hidden;
   background: linear-gradient(to right, white, white 50%, #7f055f 50%);
   background-clip: text;
