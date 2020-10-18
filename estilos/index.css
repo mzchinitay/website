@@ -394,7 +394,7 @@ footer {
 .link-footer,
 .con-amor {
   text-decoration: none;
-  color: white;
+  color: #7f055f;
 }
 .link-footer {
   font-weight: bold;
@@ -624,7 +624,7 @@ label {
   font-weight: bold;
 }
 .body-contacto {
-  background: linear-gradient(90deg, #f2befc, #7f055f);
+  background: #7f055f;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
