@@ -485,7 +485,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px auto 40px auto;
+    padding: 10px 0 40px 0;
   }
   .principal {
     max-width: 500px;
